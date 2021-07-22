@@ -14,5 +14,10 @@ use App\Http\Controllers\AlunosController;
 */
 
 
+//Api page incial
+Route::get('/', function () {
+    return view('welcome');
+});
+
 //Rota {URI} de acesso para api-lista-alunos , chama AlunosController e metodo reponseUserList
 Route::get('/api-userlist', [AlunosController::class, 'reponseUserList']);
