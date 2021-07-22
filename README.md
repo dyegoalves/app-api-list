@@ -1,6 +1,6 @@
-## Tecnologia utilizada para desenvolvimento do app Front-End - <code>VUEjs</code>
+## Tecnologia utilizada para desenvolvimento Front-End - <code>VUEjs</code>
 
-### Dependências e Requerimentos para rodar o Laravel
+### Dependências e Requerimentos para rodar o VUEjs
 
 <br>
 
@@ -20,7 +20,7 @@
   - <b>npm run serve</b>
     - Roda um servidor NodeJS local app-lista-alunos [ Vue JS ]
   - <b>npm run build</b>
-    - Optional : Executa uma build da aplicação criada em VueJS dento da pasta <b>/dist</b> app-lista-alunos [ Vue JS ]
+    - Optional: Executa uma build da aplicação criada em VueJS dento da pasta <b>/dist</b> app-lista-alunos [Vue JS]
 
 <br>
 <p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
@@ -42,7 +42,7 @@ Vue.js is an MIT-licensed open source project with its ongoing development made 
 
 <br>
 
-## Tecnologia utilizada para desenvolvimento da api Back-End - <code>LARAVEL v8.x</code>
+## Tecnologia utilizada para desenvolvimento Back-End - <code>LARAVELv8.x</code>
 
 ### Dependências e Requerimentos para rodar o Laravel
 
