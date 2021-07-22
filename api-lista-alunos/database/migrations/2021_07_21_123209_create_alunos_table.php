@@ -13,6 +13,8 @@ class CreateAlunosTable extends Migration
      */
     public function up()
     {
+
+        //Cria a tabela Alunos no banco de dados Alunos com os seus atributos
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
             $table->string("name");

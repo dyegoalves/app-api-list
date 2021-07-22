@@ -13,6 +13,7 @@ class CreateLogsTable extends Migration
      */
     public function up()
     {
+        //Cria a tabela Logs no banco de dados Alunos com os seus atributos
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
             $table->string("logname");

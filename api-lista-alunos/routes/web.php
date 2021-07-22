@@ -1,10 +1,7 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlunosController;
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,11 +13,6 @@ use App\Http\Controllers\AlunosController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-
-Route::get('/userlist', [AlunosController::class, 'reponseUserList']);
-
-
+//Rota {URI} de acesso para api-lista-alunos , chama AlunosController e metodo reponseUserList
+Route::get('/api-userlist', [AlunosController::class, 'reponseUserList']);

@@ -1,4 +1,5 @@
 <template>
+  <!-- Component app ROOT da aplicacao -->
   <div id="app">
     <header>
       <div class="navbar bg-nav box-shadow">
@@ -8,7 +9,6 @@
           </a>
         </div>
       </div>
-
       <div class="navbar nav-button box-shadow d-flex">
         <div class="justify-content-between">
           <p class="navt">
@@ -18,17 +18,22 @@
         </div>
       </div>
     </header>
-
     <div class="container-fluid">
       <div class="row">
         <h5>Participantes</h5>
-
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10 bg-boximg">
               <div class="row">
-                <box-aluno v-for="item in items" :key="item.message">
+                <!-- Component <box-aluno> Responsavel por criar com v-for boxs enviando as props name e avatar URL-->
+                <box-aluno
+                  :userAluno="user.name"
+                  :userAvatar="user.avatar"
+                  v-for="user in users"
+                  :key="user.name"
+                  :key1="user.avatar"
+                >
                 </box-aluno>
               </div>
             </div>
@@ -40,50 +45,30 @@
     <!-- /.container -->
   </div>
 </template>
-
 <script>
+/** Importe da libs e componentes */
+import axios from "axios";
 import BoxAluno from "./components/BoxAluno.vue";
-//import BoxAluno from "./components/BoxAluno.vue";
-
 export default {
   name: "App",
   components: {
     BoxAluno,
-    //  BoxAluno,
   },
   data() {
     return {
-      items: [
-        { message: "Foo" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-        { message: "Bar" },
-      ],
+      users: [],
     };
+  },
+  mounted() {
+    /** Requisao AJAX da api-userlist , object this.users armazena a resposta axios AJAX */
+    axios
+      .get("http://127.0.0.1:8000/api-userlist")
+      .then((response) => (this.users = response.data));
   },
 };
 </script>
-
 <style>
+/* Costumizacao CSS do componente*/
 :root {
   --color_darker: #375a64;
   --color_dark: #88a5b0;

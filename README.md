@@ -28,9 +28,44 @@ o { color: Orange }
 g { color: Green }
 </style>
 
-### Comandos Laravel
+### Dedendencias / Requerimentos para roda o Laravel
+
+<br>
+
+> Composer v2.0.9
+
+> PHP >= 7.3
+
+- Extessions
+
+  > BCMath PHP Extension
+
+  > Ctype PHP Extension
+
+  > Fileinfo PHP Extension
+
+  > JSON PHP Extension
+
+  > Mbstring PHP Extension
+
+  > OpenSSL PHP Extension
+
+  > PDO PHP Extension
+
+  > Tokenizer PHP Extension
+
+  > XML PHP Extension
+
+</br>
+
+### <r> Comandos Laravel após clonar o projeto do github;
 
 - Execute no terminal dentro da raiz pasta <code> api-lista-alunos </code>
+
+  - <o>composer-install</o>
+    - Instala as depedencias do projeto api-lista-aluno [ Laravel ]
+  - <o>php artisan migrate</o>
+    - Cria as migrations ou tabelas no bando de dados
   - <o>php artisan db:seed</o>
     - Este comando é reponsavel para criação dos dados na base de dados
   - <o>php artisan serve</o>

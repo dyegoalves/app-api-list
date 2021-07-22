@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Alunos extends Model
 {
+    //Models para uso do ORM MYSQL do LARAVEL
     use HasFactory;
 }

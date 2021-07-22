@@ -16,12 +16,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        //Popula o banco de dados com dados da Lib FAKER
         Alunos::truncate();
         $faker  = Faker::create();
         foreach (range(1, 50) as $i) {
             Alunos::create([
                 "name" => $faker->name(),
-                "avatar" => $faker->imageUrl($width = 640, $height = 480),
+                "avatar" => $faker->imageUrl($width = 200, $height = 200, "SENAI"),
             ]);
         }
     }
