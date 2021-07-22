@@ -1,5 +1,16 @@
 ## Tecnogoligia utiliza para api Front-End
 
+### Comandos VUE JS após clonar o projeto do github;
+
+- Execute no terminal dentro da raiz pasta <code> app-lista-alunos </code>
+  <br>
+  - <b>npm-install</b>
+    - Instala as depedencias do projeto app-lista-alunos [ Vue JS ]
+  - <b>npm run serve</b>
+    - Roda um servidor NodeJS local app-lista-alunos [ Vue JS ]
+  - <b>npm run build</b>
+    - Optional : Excuta uma build da aplicação criada em VueJS dento da pasta <b>/dist</b> app-lista-alunos [ Vue JS ]
+
 <br>
 <p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
@@ -22,13 +33,7 @@ Vue.js is an MIT-licensed open source project with its ongoing development made 
 
 ## Tecnologia utilizada para api Back-End
 
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
-
-### Dedendencias / Requerimentos para roda o Laravel
+### Dedendencias / Requerimentos para rodar o Laravel
 
 <br>
 
@@ -62,13 +67,13 @@ g { color: Green }
 
 - Execute no terminal dentro da raiz pasta <code> api-lista-alunos </code>
 
-  - <o>composer-install</o>
+  - <b>composer-install</b>
     - Instala as depedencias do projeto api-lista-aluno [ Laravel ]
-  - <o>php artisan migrate</o>
+  - <b>php artisan migrate</b>
     - Cria as migrations ou tabelas no bando de dados
-  - <o>php artisan db:seed</o>
+  - <b>php artisan db:seed</b>
     - Este comando é reponsavel para criação dos dados na base de dados
-  - <o>php artisan serve</o>
+  - <b>php artisan serve</b>
     - Este comando é reponsavel para subir o servidor php para api laravel
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
