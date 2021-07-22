@@ -1,3 +1,90 @@
+## Tecnologia utilizada para desenvolvimento Back-End - <code>LARAVELv8.x</code>
+
+### Dependências e Requerimentos para rodar o Laravel
+
+<br>
+
+> Composer v2.0.9
+
+> PHP >= 7.3
+
+- Extensions instaladas no PHP
+
+  > BCMath PHP Extension
+
+  > Ctype PHP Extension
+
+  > Fileinfo PHP Extension
+
+  > JSON PHP Extension
+
+  > Mbstring PHP Extension
+
+  > OpenSSL PHP Extension
+
+  > PDO PHP Extension
+
+  > Tokenizer PHP Extension
+
+  > XML PHP Extension
+
+</br>
+
+### <r> Comandos Laravel após clonar o projeto do github;
+
+- Execute no terminal dentro da raiz pasta <code> api-lista-alunos </code>
+  </br>
+
+- <b>composer install</b>
+
+  - Instala as depedencias do projeto api-lista-aluno [ Laravel ]"
+
+    </br>
+
+- > <b> Obs: Atenção </b>
+
+  - Renomear ou Copiar arquivo <b>.env-exemple </b> para <b>.env </b>e configure as variáveis
+
+    - > <b>DB_CONNECTION=mysql </b>< Driver da base dados ex mysql ou pgsql
+    - > <b>DB_HOST=127.0.0.1 </b>< Host da da base dados
+    - > <b>DB_PORT=3306 </b>< Port da base de dados
+    - > <b>DB_DATABASE=laravel </b>< Nome da base de dados voce pode criar com mysql workbench ou terminal SQL
+    - > <b>DB_USERNAME=root </b>< Usuario do Banco de dados
+    - > <b>DB_PASSWORD= senhadobancodeteste </b> < Senha do Banco de dados
+
+- <b>php artisan key:generate</b>
+  - Cria as chave de criptografia da aplicaçao
+- <b>php artisan migrate</b>
+  - Cria as migrations ou tabelas no bando de dados
+- <b>php artisan db:seed</b>
+  - Este comando é reponsavel para criação dos dados na base de dados
+- <b>php artisan serve</b>
+  - Este comando é reponsavel para subir o servidor php para api laravel
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
+
+## About Laravel
+
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Learning Laravel
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+<br>
+
 ## Tecnologia utilizada para desenvolvimento Front-End - <code>VUEjs</code>
 
 ### Dependências e Requerimentos para rodar o VUEjs
@@ -15,7 +102,7 @@
 
 - Execute no terminal dentro da raiz pasta <code> app-lista-alunos </code>
   <br>
-  - <b>npm-install</b>
+  - <b>npm install</b>
     - Instala as depedências do projeto app-lista-alunos [ Vue JS ]
   - <b>npm run serve</b>
     - Roda um servidor NodeJS local app-lista-alunos [ Vue JS ]
@@ -41,70 +128,3 @@
 Vue.js is an MIT-licensed open source project with its ongoing development made possible entirely by the support of these awesome [backers](https://github.com/vuejs/vue/blob/dev/BACKERS.md). If you'd like to join them, please consider
 
 <br>
-
-## Tecnologia utilizada para desenvolvimento Back-End - <code>LARAVELv8.x</code>
-
-### Dependências e Requerimentos para rodar o Laravel
-
-<br>
-
-> Composer v2.0.9
-
-> PHP >= 7.3
-
-- Extensions
-
-  > BCMath PHP Extension
-
-  > Ctype PHP Extension
-
-  > Fileinfo PHP Extension
-
-  > JSON PHP Extension
-
-  > Mbstring PHP Extension
-
-  > OpenSSL PHP Extension
-
-  > PDO PHP Extension
-
-  > Tokenizer PHP Extension
-
-  > XML PHP Extension
-
-</br>
-
-### <r> Comandos Laravel após clonar o projeto do github;
-
-- Execute no terminal dentro da raiz pasta <code> api-lista-alunos </code>
-
-  - <b>composer-install</b>
-    - Instala as depedencias do projeto api-lista-aluno [ Laravel ]
-  - <b>php artisan migrate</b>
-    - Cria as migrations ou tabelas no bando de dados
-  - <b>php artisan db:seed</b>
-    - Este comando é reponsavel para criação dos dados na base de dados
-  - <b>php artisan serve</b>
-    - Este comando é reponsavel para subir o servidor php para api laravel
-
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
