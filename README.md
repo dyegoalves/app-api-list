@@ -20,7 +20,21 @@ Vue.js is an MIT-licensed open source project with its ongoing development made 
 
 <br>
 
-## Tecnogoligia utiliza para api Back-End
+## Tecnologia utilizada para api Back-End
+
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
+
+### Comandos Laravel
+
+- Execute no terminal dentro da raiz pasta <code> api-lista-alunos </code>
+  - <o>php artisan db:seed</o>
+    - Este comando é reponsavel para criação dos dados na base de dados
+  - <o>php artisan serve</o>
+    - Este comando é reponsavel para subir o servidor php para api laravel
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
